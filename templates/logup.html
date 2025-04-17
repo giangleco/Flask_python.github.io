@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng Ký - Ommani</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div style="display: flex;" class="form-box flex-box">
+            <div style="width:2000px;" class="form-content">
+                <div class="logo">
+                    <img src="/static/img/logo.svg" alt="Logo Ommani">
+                </div>
+                <h2>Tạo tài khoản</h2>
+                <form id="signup-form">
+                    <div class="input-group">
+                        <label for="phone-logup">Số điện thoại <span class="required">*</span></label>
+                        <input type="text" id="phone-logup" placeholder="Nhập số điện thoại..." required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email-logup">Email <span class="required">*</span></label>
+                        <input type="email" id="email-logup" placeholder="Nhập email..." required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password-logup">Mật khẩu <span class="required">*</span></label>
+                        <input type="password" id="password-logup" placeholder="Nhập mật khẩu..." required>
+                    </div>
+                    <div class="input-group">
+                        <label for="confirm-password-logup">Nhập lại mật khẩu <span class="required">*</span></label>
+                        <input type="password" id="confirm-password-logup" placeholder="Nhập lại mật khẩu..." required>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="show-password-logup">
+                        <label for="show-password-logup">Hiển thị mật khẩu</label>
+                    </div>
+                    <div class="button-group">
+                        <a id="dangnhap" href="#" class="btn secondary">Đăng nhập</a>
+                        <button type="submit" id="signup-submit-btn" class="btn primary">Tiếp tục</button>
+                    </div>
+                    <p id="signup-error-msg"></p> <!-- Thêm để hiển thị thông báo -->
+                </form>
+                <p class="footer-text">© 2023 Ommani v.1.7.3</p>
+            </div>
+            <div  class="sidebar">
+                <img src="/static/img/mdi_security-account (1).svg" alt="Shield Icon" class="shield-icon">
+                <div class="icons">
+                    <img src="/static/img/Logo OMF22.svg" alt="Icon 1">
+                    <img src="/static/img/Logo OMFARM33.svg" alt="Icon 2">
+                    <img src="/static/img/Logo_OMCHECK44.svg" alt="Icon 3">
+                    <img src="/static/img/Logo_FNB.svg" alt="Icon 4">
+                    <img src="/static/img/Logo_ISS66.svg" alt="Icon 5">
+                    <img src="/static/img/Logo_CRM77.svg" alt="Icon6">
+                    <img src="/static/img/logo-xweb88.svg" alt="Icon7">
+                </div>
+                <p class="sidebar-text">Một tài khoản, Hoạt động trên mọi nền tảng Ommani.</p>
+            </div>
+        </div>
+    </div>
+    <script src="/static/js/log.js"></script>
+</body>
+</html>
