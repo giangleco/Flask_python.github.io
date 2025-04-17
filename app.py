@@ -73,7 +73,7 @@ def logup():
     return jsonify({'success': True, 'message': 'Đăng ký thành công! Vui lòng đăng nhập.'})
 @app.route('/dashboard')
 def dashboard():
-    return "Chào mừng!"
+    return render_template('Hello_word.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
